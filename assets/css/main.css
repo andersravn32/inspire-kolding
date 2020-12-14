@@ -18,5 +18,5 @@ main.css is the top level stylesheet, extra modules should be imported through t
 
 /* Insert variables here */
 :root{
-    
+    --font:sans-serif;
 }
