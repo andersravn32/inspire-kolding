@@ -19,6 +19,8 @@ main.css is the top level stylesheet, extra modules should be imported through t
 /* Insert variables here */
 :root{
     --header-font:"Raleway", sans-serif;
+    --header-font-weight: 900;
+    --header-font-style: italic;
     --font:"Roboto", sans-serif;
 
     --component-button-color:rgb(122,230,69); 
