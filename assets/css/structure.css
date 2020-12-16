@@ -1,0 +1,11 @@
+.navbar{
+    position:fixed;
+    top:0px;
+    z-index:100;
+}
+
+.hero-footer{
+    position:absolute;
+    bottom:0px;
+    z-index:10;
+}
