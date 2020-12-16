@@ -37,7 +37,6 @@
     color:white;
     font-size:36px;
     text-decoration: none;
-    box-shadow: 3px 3px 0px 1px rgba(143,242,85,0.43); 
 }
 
 .navbar-item{
@@ -78,7 +77,6 @@
     text-decoration: none;
     padding:10px;
     background-color: var(--component-button-color);
-    box-shadow: 3px 3px 0px 1px rgba(143,242,85,0.43); 
 }
 
 .hero-footer{
