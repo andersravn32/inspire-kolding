@@ -24,7 +24,7 @@
 }
 
 .navbar img{
-    height:75px;
+    height:60px;
 }
 
 .navbar-button{
@@ -48,19 +48,51 @@
 
 .hero{
     height:100vh;
+    width:100%;
+    padding:15px;
     background-image: url(../img/bg.png);
     background-size: cover;
     background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2{
+    font-size:94px;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    text-align:left;
+    text-transform: uppercase;
 }
 
 .hero-button{
-    
+    font-size:21px;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:10px;
+    background-color: var(--component-button-color);
+    box-shadow: 3px 3px 0px 1px rgba(143,242,85,0.43); 
 }
 
 .hero-footer{
     background-color:var(--component-background-opacity);
     height:100px;
     width:100%;
+    display:flex;
+    padding:15px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.hero-footer img{
+    height:60px;
 }
 
 .hero-video{
