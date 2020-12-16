@@ -60,6 +60,7 @@
 .hero-footer{
     background-color:var(--component-background-opacity);
     height:100px;
+    width:100%;
 }
 
 .hero-video{
