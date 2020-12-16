@@ -1,0 +1,26 @@
+/* 
+main.css is the top level stylesheet, extra modules should be imported through this document.
+*/
+
+
+/* Import modules here */
+@import url("components.css");
+@import url("structure.css");
+@import url("animations.css");
+
+
+/* General styling */
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+
+
+/* Insert variables here */
+:root{
+    --font:sans-serif;
+    --limeGreen:rgb(122,230,69); 
+    --hvid:rgb(245,245,245);
+    --darkgreen:rgb(11,61,54);
+    --mintblue:rgb(0,155,129);
+}
