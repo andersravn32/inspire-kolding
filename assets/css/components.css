@@ -1,14 +1,30 @@
 /* Importing of fonts from adobe */
 @import url("https://use.typekit.net/dmt1eqx.css");
 
+/* Global Styling */
+
+.button-positive{
+
+}
+
+.button-negative{
+
+}
+
+/* Navbar Styling */
+
 .navbar{
     height:100px;
     width:100%;
-    background-color:var(--component-background);
+    background-color:var(--component-background-opacity);
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items:center;
     padding:15px;
+}
+
+.navbar img{
+    height:75px;
 }
 
 .navbar-button{
@@ -24,3 +40,65 @@
     box-shadow: 3px 3px 0px 1px rgba(143,242,85,0.43); 
 }
 
+.navbar-item{
+    display:none;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-button{
+    
+}
+
+.hero-footer{
+    background-color:var(--component-background-opacity);
+    height:100px;
+}
+
+.hero-video{
+    height:100vh;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Boxes Section */
+
+.box-selector-container{
+    height:100vh;
+    width:100%;
+    padding:15px;
+}
+
+.box-selector{
+    height: 75px;
+    background-color:var(--component-background);
+    padding:15px;
+}
+
+.box-selected{
+    height:500px;
+    background-color:var(--component-background);
+    padding:15px;
+}
+
+/* Footer */
+
+.footer{
+
+}
+
+.footer-logo{
+
+}
+
+.footer-socials{
+
+}
