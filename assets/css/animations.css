@@ -1,6 +1,13 @@
+.scale-effect{
+    transition: .5s;
+}
+
+.scale-effect:hover{
+    transform:scale(1.05);
+}
+
 .button-shadow{
-    transition:.5s;
-    
+    transition:.2s;
 }
 
 .button-shadow:hover{
