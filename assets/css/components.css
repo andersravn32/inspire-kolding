@@ -14,7 +14,7 @@
 /* Navbar Styling */
 
 .navbar{
-    height:100px;
+    height:75px;
     width:100%;
     background-color:var(--component-background-opacity);
     display:flex;
@@ -22,10 +22,11 @@
     align-items:center;
     padding:15px;
     border-bottom:1px solid var(--component-background);
+    transition: all .24s ease-in-out;
 }
 
 .navbar img{
-    height:75px;
+    height:50px;
 }
 
 .navbar-button-collection{
@@ -54,14 +55,14 @@
 }
 
 .navbar-button{
-    height:65px;
-    width:65px;
+    height:50px;
+    width:50px;
     background-color: var(--component-button-color);
     display:flex;
     justify-content: center;
     align-items: center;
     color:white;
-    font-size:38px;
+    font-size:30px;
     text-decoration: none;
     box-shadow: 5px 5px 0px 1px var(--component-button-shadow);
     text-shadow: 1px 1px var(--component-background-opacity);
@@ -69,9 +70,9 @@
 }
 
 .navbar-menu{
-    height:calc(100vh - 100px);
+    height:calc(100vh - 75px);
     width:100%;
-    max-width:400px;
+    max-width:500px;
     background-color:var(--component-background-opacity);
     display:flex;
     justify-content: center;
@@ -242,7 +243,7 @@
     margin:10px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 768px) {
     .navbar-button-collection{
         display:none;
     }
@@ -250,5 +251,5 @@
     .navbar-button{
         display:flex;
     }
+}
 
-  }
