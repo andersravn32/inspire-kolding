@@ -243,6 +243,46 @@
     margin:10px;
 }
 
+/* Contact Page */
+.contact-box{
+    height:100vh;
+    background-image: url(../img/bg1.png);
+    background-size: cover;
+    background-position: center;
+    padding-top:75px;
+}
+
+.contact-box h1{
+    font-family:var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style:var(--header-font-style);
+    color:var(--component-text-color);
+    font-size:50px;
+    padding:15px;
+}
+
+.contact-information{
+    background-color:whitesmoke;
+    height:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.contact-information ul{
+    padding:0;
+    list-style-type:none;
+    font-size:36px;
+    font-family:var(--font);
+    font-weight: var(--header-font-weight);
+    color:var(--component-background);
+    text-align:center;
+}
+
+.contact-information i{
+    padding:15px;
+    font-size:50px;
+}
+
 @media only screen and (max-width: 768px) {
     .navbar-button-collection{
         display:none;
