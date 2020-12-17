@@ -69,7 +69,7 @@
 }
 
 .navbar-menu{
-    height:calc(100vh - 200px);
+    height:calc(100vh - 100px);
     width:100%;
     max-width:400px;
     background-color:var(--component-background-opacity);
@@ -78,7 +78,13 @@
     align-items: center;
     flex-direction: column;
     text-transform: uppercase;
-    display:none;
+    transition: all .24s ease-in-out;
+    transform:translate(100%);
+    visibility: hidden;
+}
+
+.navbar-menu-expanded{
+    transform:translate(0) !important;
 }
 
 .navbar-menu ul{
@@ -166,7 +172,7 @@
     justify-content: space-between;
     align-items:center;
     border-top:1px solid var(--component-background);
-    display:none;
+    transition: all .24s ease-in-out;
 }
 
 .hero-footer img{
