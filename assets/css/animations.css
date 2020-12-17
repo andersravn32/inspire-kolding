@@ -1,9 +1,9 @@
 .scale-effect{
-    transition: .5s;
+    transition: var(--global-transition-timing);
 }
 
 .scale-effect:hover{
-    transform:scale(1.05);
+    transform:var(--global-scale);
 }
 
 .button-shadow{
@@ -12,4 +12,8 @@
 
 .button-shadow:hover{
     box-shadow: 3px 3px 0px 1px var(--component-button-shadow); 
+}
+
+.text-shadow{
+    text-shadow: 1px 1px var(--text-shadow-color);
 }

@@ -29,5 +29,11 @@ main.css is the top level stylesheet, extra modules should be imported through t
     --component-background-opacity:rgba(11,60,54,0.85);
     --component-text-color:rgb(245,245,245);
 
+    --text-shadow-color:rgba(11,60,54,0.85);
+
     --mintblue:rgb(0, 155, 129);
+
+    --global-transition-timing: .24s;
+    --global-scale-timing: .5s;
+    --global-scale: scale(1.05);
 }
