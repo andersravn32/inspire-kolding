@@ -33,7 +33,6 @@
     justify-content: center;
     align-items:center;
     list-style-type: none;
-    display:none;
 }
 
 .navbar-button-collection li{
@@ -66,6 +65,7 @@
     text-decoration: none;
     box-shadow: 5px 5px 0px 1px var(--component-button-shadow);
     text-shadow: 1px 1px var(--component-background-opacity);
+    display:none;
 }
 
 .navbar-menu{
@@ -241,3 +241,14 @@
 .socials-container i{
     margin:10px;
 }
+
+@media only screen and (max-width: 850px) {
+    .navbar-button-collection{
+        display:none;
+    }
+
+    .navbar-button{
+        display:flex;
+    }
+
+  }
