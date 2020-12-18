@@ -139,7 +139,7 @@
 }
 
 .hero h2{
-    font-size:94px;
+    font-size:84px;
     font-family: var(--header-font);
     font-weight: var(--header-font-weight);
     font-style: var(--header-font-style);
@@ -232,8 +232,12 @@
 }
 
 .footer ul{
-    padding:0;
+    padding:15px;
     list-style-type: none;
+    text-align:center;
+    width:100%;
+    max-width:220px;
+    border-top:1px solid var(--component-button-shadow);
 }
 
 .footer li{
@@ -251,6 +255,11 @@
 .socials-container{
     color:var(--component-button-shadow);
     font-size:48px;
+    width:100%;
+    max-width:220px;
+    display:flex;
+    justify-content: space-around;
+    padding:15px;
 }
 
 .socials-container a{
@@ -258,9 +267,6 @@
     font-size:48px;
 }
 
-.socials-container i{
-    margin:10px;
-}
 
 /* Contact Page */
 .contact-box{
@@ -278,28 +284,43 @@
     color:var(--component-text-color);
     font-size:50px;
     padding:15px;
+    width:100%;
 }
 
 .contact-information{
     background-color:whitesmoke;
-    height:100%;
+    height:calc(100% - 89px);
     display:flex;
     justify-content: center;
+    align-items:center;
 }
 
 .contact-information ul{
     padding:0;
     list-style-type:none;
-    font-size:36px;
+    font-size:30px;
     font-family:var(--font);
     font-weight: var(--header-font-weight);
     color:var(--component-background);
     text-align:center;
+    height:100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-information li a{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:var(--component-background);
+    text-decoration: none;
 }
 
 .contact-information i{
-    padding:15px;
-    font-size:50px;
+    padding-right:20px;
+    font-size:35px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -312,3 +333,16 @@
     }
 }
 
+@media only screen and (max-width: 374px) {
+    .hero h2{
+        font-size:74px;
+    }
+
+    .hero-button{
+        font-size:18px;
+    }
+    
+    .hero-footer img{
+        height:50px;
+    }
+}

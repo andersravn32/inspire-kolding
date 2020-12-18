@@ -8,11 +8,12 @@
     <!-- Primary Stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <!-- Locally stored assets -->
-    <script src="assets/js/navbar.js"></script>
-
     <!-- Remotely stored assets -->
     <script src="https://kit.fontawesome.com/ae8dcf286c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <!-- Locally stored assets -->
+    <script src="assets/js/navbar.js"></script>
 
 </head>
 <body>
@@ -78,6 +79,17 @@
         </div>
         <p>Copyright &copy InSpire Kolding 2020</p>
     </footer>
-
+    <!-- Script til at fade hero-footer på scroll event 
+    <script>
+        var myElement = $('#hero-footer');
+        var enabled = true;
+        $(window).on('scroll', function() {
+            var st = $(this).scrollTop();
+            myElement.css({'opacity' : 1 - st/300 });
+            enabled = false;
+        });
+    </script>
+    -->
+    
 </body>
 </html>

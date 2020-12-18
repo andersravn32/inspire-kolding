@@ -33,7 +33,7 @@ main.css is the top level stylesheet, extra modules should be imported through t
 
     --mintblue:rgb(0, 155, 129);
 
-    --global-transition-timing: .24s;
+    --global-transition-timing: .25s;
     --global-scale-timing: .5s;
     --global-scale: scale(1.05);
 }

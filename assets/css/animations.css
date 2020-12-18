@@ -7,7 +7,7 @@
 }
 
 .button-shadow{
-    transition:.2s;
+    transition:var(--global-transition-timing);
 }
 
 .button-shadow:hover{
