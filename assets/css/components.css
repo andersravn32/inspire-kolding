@@ -288,7 +288,6 @@
 }
 
 .contact-information{
-    background-color:whitesmoke;
     height:calc(100% - 89px);
     display:flex;
     justify-content: center;
@@ -301,7 +300,7 @@
     font-size:30px;
     font-family:var(--font);
     font-weight: var(--header-font-weight);
-    color:var(--component-background);
+    color:var(--component-text-color);
     text-align:center;
     height:100%;
     display:flex;
@@ -314,13 +313,15 @@
     display:flex;
     justify-content: center;
     align-items:center;
-    color:var(--component-background);
+    flex-direction: column;
+    color:var(--component-text-color);
     text-decoration: none;
+    text-align: center;
 }
 
 .contact-information i{
     padding-right:20px;
-    font-size:35px;
+    font-size:40px;
 }
 
 @media only screen and (max-width: 768px) {
