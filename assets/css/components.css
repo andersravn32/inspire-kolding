@@ -3,13 +3,6 @@
 
 /* Global Styling */
 
-.button-positive{
-
-}
-
-.button-negative{
-
-}
 
 /* Navbar Styling */
 
@@ -20,13 +13,17 @@
     display:flex;
     justify-content: space-between;
     align-items:center;
-    padding:15px;
+    padding:10px;
     border-bottom:1px solid var(--component-background);
     transition: all var(--global-transition-timing) ease-in-out;
 }
 
 .navbar img{
     height:50px;
+}
+
+.navbar-buttons{
+    display:flex;
 }
 
 .navbar-button-collection{
@@ -64,8 +61,9 @@
     color:white;
     font-size:30px;
     text-decoration: none;
-    box-shadow: 5px 5px 0px 1px var(--component-button-shadow);
+    box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
     display:none;
+    margin:10px;
 }
 
 .navbar-menu{
@@ -100,7 +98,7 @@
 .navbar-item{
     padding:10px;
     width:100%;
-    max-width:300px;
+    max-width:350px;
     height:70px;
     margin-top:10px;
     margin-bottom:10px;
@@ -110,7 +108,7 @@
     display:flex;
     align-items:center;
     justify-content: space-between;
-    box-shadow: 5px 5px 0px 1px var(--component-button-shadow);
+    box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
 }
 
 .navbar-item a{
@@ -119,7 +117,26 @@
     font-weight: var(--header-font-weight);
     font-style:var(--header-font-style);
     text-decoration: none;
-    text-shadow: 1px 1px var(--component-background-opacity);
+    text-shadow: 2px 2px var(--text-shadow-color);
+}
+
+.navbar-language-selector{
+    padding:10px;
+    text-align:center;
+}
+
+.navbar-language-selector h2{
+    padding:10px;
+    font-size:24px;
+    color:var(--component-text-color);
+    font-family: var(--header-font);
+    font-style:var(--header-font-style);
+    font-weight: var(--header-font-weight);
+}
+
+.navbar-language-selector img{
+    width:64px;
+    margin:5px;
 }
 
 
@@ -159,7 +176,7 @@
     text-decoration: none;
     padding:15px;
     background-color: var(--component-button-color);
-    box-shadow: 5px 5px 0px 1px var(--component-button-shadow);
+    box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
 }
 
 .hero-footer{
@@ -196,25 +213,98 @@
 /* Boxes Section */
 
 .box-selector-container{
-    height:100vh;
     width:100%;
-    padding:15px;
-    background-image: url(../img/bg1.png);
+    height:100vh;
+    background-image: url(../img/bg2.png);
     background-size: cover;
     background-position: center;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style:var(--header-font-style);
+    color:var(--component-text-color);
+    text-align: center;
+    padding:15px;
+    padding-top:75px;
+    padding-bottom:50px;
 }
 
-.box-selector{
-    height: 75px;
-    background-color:var(--component-background);
-    padding:15px;
+.box-selector-header{
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
-.box-selected{
-    height:500px;
-    background-color:var(--component-background);
-    padding:15px;
+.box-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.box{
+    height:100vh;
+    width:100%;
+    max-width:400px;
+    max-height:400px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin:5px;
+}
+
+.box-selector-container h2{
+    font-size:54px;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    text-transform: uppercase;
+}
+
+.box-dropdown{
+    padding:15px;
+    width:100%;
+    background-color:var(--component-button-color);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
+}
+
+.box-dropdown h2,i{
+    font-size:30px;
+}
+
+.box-display a{
+    color:var(--component-text-color);
+}
+
+.box-display{
+    height:200px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+
+.box-display img{
+    height:140px;
+}
+
+.box-rent-button{
+    background-color:var(--component-button-color);
+    font-size:35px;
+    padding:15px 35px;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
+    width:100%;
+}
+
 
 /* Footer */
 
@@ -267,6 +357,9 @@
     font-size:48px;
 }
 
+.socials-container i{
+    font-size:48px;
+}
 
 /* Contact Page */
 .contact-box{
@@ -324,6 +417,293 @@
     font-size:40px;
 }
 
+/* Login Page */
+
+.login-container{
+    min-height:100vh;
+    background-image: url(../img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    text-transform: uppercase;
+    padding-top:100px;
+    padding-left:30px;
+    padding-right:30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-container h1{
+    font-size:55px;
+}
+
+.login-container p{
+    font-size:20px;
+}
+
+.login-container b{
+    color:#7AE645;
+}
+
+.login-facebook-button{
+    background-color:#295EA4;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size:18px;
+    padding:10px;
+    text-decoration: none;
+    color:var(--component-text-color);
+    width:100%;
+    max-width:300px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.login-form{
+    width:100%;
+    max-width:500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.login-form label{
+    align-self: flex-start;
+    justify-self: center;
+    margin-top:2px;
+    margin-bottom:2px;
+    display:flex;
+    align-items:center;
+}
+
+.login-form input[type="text"]{
+    padding:10px;
+    width:100%;
+    background-color:rgba(255,255,255,0.26);
+    border:2px solid #7AE645;
+    color:whitesmoke;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: normal;
+    color:var(--component-text-color);
+    font-size:21px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.login-form input[type="password"]{
+    padding:10px;
+    width:100%;
+    background-color:rgba(255,255,255,0.26);
+    border:2px solid #7AE645;
+    color:whitesmoke;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style:normal;
+    color:var(--component-text-color);
+    font-size:21px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.login-form input[type="checkbox"]{
+    background-color:rgba(255,255,255,0.26);
+    border:2px solid #7AE645;
+    height:20px;
+    width:20px;
+    color:whitesmoke;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    margin-left:10px;
+}
+
+.login-form input[type="submit"]{
+    height:50px;
+    width:100%;
+    background-color:var(--component-button-color);
+    border:none;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    font-size:22px;
+    margin-top:10px;
+    margin-bottom:10px;
+    box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
+    text-transform: uppercase;
+    cursor:pointer;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.login-form input:focus {
+    outline: none;
+}
+
+.login-forgot{
+    align-self: flex-end;
+    font-size:14px;
+    text-decoration: none;
+    margin-top:10px;
+    margin-bottom:10px;
+    color:var(--component-text-color);
+}
+
+.login-register-button{
+    height:50px;
+    width:100%;
+    background-color:var(--component-button-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:var(--component-text-color);
+    font-size:22px;
+    margin-top:10px;
+    margin-bottom:10px;
+    box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
+}
+.login-register-button i{
+    padding:10px;
+}
+
+/* Registration Page */
+
+.register-container{
+    background-image: url(../img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    text-transform: uppercase;
+    padding-top:100px;
+    padding-left:30px;
+    padding-right:30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.register-container h1{
+    font-size:60px;
+}
+
+.register-container p{
+    font-size:20px;
+}
+
+.register-container b{
+    color:#7AE645;
+}
+
+.register-form{
+    width:100%;
+    max-width:500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.register-form label{
+    align-self: flex-start;
+}
+
+.register-form input[type="text"]{
+    padding:10px;
+    width:100%;
+    background-color:rgba(255,255,255,0.26);
+    border:2px solid #7AE645;
+    color:whitesmoke;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style:normal;
+    color:var(--component-text-color);
+    font-size:16px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.register-form input[type="email"]{
+    padding:10px;
+    width:100%;
+    background-color:rgba(255,255,255,0.26);
+    border:2px solid #7AE645;
+    color:whitesmoke;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style:normal;
+    color:var(--component-text-color);
+    font-size:22px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.register-form input[type="password"]{
+    padding:10px;
+    width:100%;
+    background-color:rgba(255,255,255,0.26);
+    border:2px solid #7AE645;
+    color:whitesmoke;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style:normal;
+    color:var(--component-text-color);
+    font-size:22px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.register-form input[type="submit"]{
+    height:50px;
+    width:100%;
+    background-color:var(--component-button-color);
+    border:none;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    font-size:22px;
+    margin-top:10px;
+    margin-bottom:10px;
+    box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
+    text-transform: uppercase;
+    cursor:pointer;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.register-birthdate{
+    display:flex;
+    justify-content: space-between;
+}
+
+.register-birthdate input{
+    margin:5px;
+}
+
+.register-form input:focus {
+    outline: none;
+}
+
+
+/* Global Media queries  */
+
 @media only screen and (max-width: 768px) {
     .navbar-button-collection{
         display:none;
@@ -332,6 +712,11 @@
     .navbar-button{
         display:flex;
     }
+
+    .box-container{
+        flex-direction: column;
+    }
+
 }
 
 @media only screen and (max-width: 374px) {

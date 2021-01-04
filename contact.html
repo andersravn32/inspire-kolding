@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inspire Your City - Contact us!</title>
-
-    <!-- Primary Stylesheet -->
-    <link rel="stylesheet" href="assets/css/main.css">
-
-    <!-- Locally stored assets -->
-     <script src="assets/js/navbar.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inspire Your City</title>
     
-
-    <!-- Remotely stored assets -->
-    <script src="https://kit.fontawesome.com/ae8dcf286c.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
-
-    <header>
-        <nav class="navbar">
-            <a href="index.html"><img src="assets/img/inspirelogo.png" alt="Logo"></a>
-            <a class="navbar-button text-shadow button-shadow" href="javascript:void(0)"onclick="toggleMenu()">  <i class="fas fa-bars"></i></a>
-           <ul class="navbar-button-collection">
-                <li class="button-shadow navbar-first-item"><a href="#">Rent a Box</a></li> 
-                <li class="button-shadow navbar-first-item"><a href="vision.html">Our vision</a></li> 
-                <li class="button-shadow navbar-first-item"><a href="contact.html">Contact</a></li> 
-                 <li class="button-shadow navbar-first-item"><a href="#"><i class="fas fa-user"></i> Login</a></li> 
-            </ul>
-        </nav>
-        <nav id="sidemenu" class="navbar-menu">
-             <ul>
-                 <li class="button-shadow navbar-item"><a href="#">Rent a Box</a><i class="fas fa-chevron-right"></i></li>
-                <li class="button-shadow navbar-item"><a href="vision.html">Our vision</a><i class="fas fa-chevron-right"></i></li>
-                <li class="button-shadow navbar-item"><a href="contact.html">Contact</a><i class="fas fa-chevron-right"></i></li>
-                 <li class="button-shadow navbar-item"><a href="#">Login</a><i class="fas fa-chevron-right"></i></li>
-           </ul>
-        </nav>
-    </header>
+        <!-- Primary Stylesheet -->
+        <link rel="stylesheet" href="assets/css/main.css">
+    
+        <!-- Remotely stored assets -->
+        <script src="https://kit.fontawesome.com/ae8dcf286c.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    
+        <!-- Locally stored assets -->
+        <script src="assets/js/navbar.js"></script>
+    
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html"><img src="assets/img/inspire_logo.png" alt="Logo"></a>
+                <div class="navbar-buttons">
+                    <a class="navbar-button text-shadow button-shadow" href="login.html">  <i class="fas fa-user"></i></a>
+                    <a class="navbar-button text-shadow button-shadow" href="javascript:void(0)"onclick="toggleMenu()">  <i class="fas fa-bars"></i></a>
+                </div>
+               <ul class="navbar-button-collection">
+                    <li class="button-shadow navbar-first-item"><a href="index.html#boxes">Boxes</a></li> 
+                    <li class="button-shadow navbar-first-item"><a href="vision.html">Our vision</a></li> 
+                    <li class="button-shadow navbar-first-item"><a href="contact.html">Contact</a></li> 
+                    <li class="button-shadow navbar-first-item"><a href="login.html"><i class="fas fa-user"></i> Login</a></li> 
+                </ul>
+            </nav>
+            <nav id="sidemenu" class="navbar-menu">
+                 <ul>
+                     <li class="button-shadow navbar-item"><a href="index.html#boxes">Boxes</a><i class="fas fa-chevron-right"></i></li>
+                    <li class="button-shadow navbar-item"><a href="vision.html">Our vision</a><i class="fas fa-chevron-right"></i></li>
+                    <li class="button-shadow navbar-item"><a href="contact.html">Contact</a><i class="fas fa-chevron-right"></i></li>
+                    <li class="button-shadow navbar-item"><a href="login.html">Login/Signup</a><i class="fas fa-chevron-right"></i></li>
+                    <li class="navbar-language-selector">
+                        <h2>Language</h2>
+                        <a href="#"><img src="assets/img/lang_da.png"></a>
+                        <a href="#"><img src="assets/img/lang_en.png"></a>
+                    </li>
+               </ul>
+            </nav>
+        </header>
 
     <main>
     <section class="contact-box">
@@ -56,10 +63,10 @@
         <a href="index.html"><img class="footer-logo scale-effect" src="assets/img/inspirelogo.png"></a>
         <ul>
             <li class="scale-effect"><a href="#">Back to the top</a></li>
-            <li class="scale-effect"><a href="#">Rent a box</a></li>
+            <li class="scale-effect"><a href="index.html#boxes">Rent a box</a></li>
             <li class="scale-effect"><a href="vision.html">Our vision</a></li>
             <li class="scale-effect"><a href="contact.html">Contact</a></li>
-            <li class="scale-effect"><a href="#">Login</a></li>
+            <li class="scale-effect"><a href="login.html">Login</a></li>
         </ul>
         <div class="socials-container">
             <a href="#"><i class="scale-effect fab fa-facebook-square"></i></a>

@@ -13,8 +13,8 @@ main.css is the top level stylesheet, extra modules should be imported through t
 *{
     box-sizing:border-box;
     margin:0;
+    scroll-behavior: smooth;
 }
-
 
 /* Insert variables here */
 :root{
@@ -29,7 +29,7 @@ main.css is the top level stylesheet, extra modules should be imported through t
     --component-background-opacity:rgba(11,60,54,0.85);
     --component-text-color:rgb(245,245,245);
 
-    --text-shadow-color:rgba(11,60,54,0.85);
+    --text-shadow-color:rgba(11,60,54,0.43);
 
     --mintblue:rgb(0, 155, 129);
 
