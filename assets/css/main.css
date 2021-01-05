@@ -24,6 +24,8 @@ main.css is the top level stylesheet, extra modules should be imported through t
     --font:"Roboto", sans-serif;
 
     --component-button-color:rgb(122,230,69); 
+    --component-button-color-negative: rgb(230, 69, 69);
+    --component-button-color-negative-opacity: rgb(230, 69, 69, 0.24);
     --component-button-shadow:rgba(142,242,85,0.43);
     --component-background:rgb(11,60,54);
     --component-background-opacity:rgba(11,60,54,0.85);

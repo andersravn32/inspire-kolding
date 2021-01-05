@@ -23,7 +23,7 @@
 }
 
 .navbar-buttons{
-    display:flex;
+    display:none;
 }
 
 .navbar-button-collection{
@@ -34,11 +34,10 @@
 }
 
 .navbar-button-collection li{
-    background-color: var(--component-button-color);
+    
     padding:10px 20px;
     margin-left:10px;
     margin-right:10px;
-    box-shadow: 5px 5px 0px 1px var(--component-button-shadow);
 }
 
 .navbar-button-collection a{
@@ -62,14 +61,12 @@
     font-size:30px;
     text-decoration: none;
     box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
-    display:none;
     margin:10px;
 }
 
 .navbar-menu{
     height:calc(100vh - 75px);
     width:100%;
-    max-width:500px;
     background-color:var(--component-background-opacity);
     display:flex;
     justify-content: center;
@@ -96,10 +93,9 @@
 }
 
 .navbar-item{
-    padding:10px;
+    padding:15px;
     width:100%;
-    max-width:350px;
-    height:70px;
+    max-width:300px;
     margin-top:10px;
     margin-bottom:10px;
     background-color: var(--component-button-color);
@@ -146,9 +142,9 @@
     height:100vh;
     width:100%;
     padding:15px;
-    background-image: url(../img/bg1.png);
+    background-image: url(../img/Urban-Farm.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
@@ -359,6 +355,10 @@
 
 .socials-container i{
     font-size:48px;
+}
+
+.footer p{
+    padding:5px;
 }
 
 /* Contact Page */
@@ -634,7 +634,7 @@
     font-weight: var(--header-font-weight);
     font-style:normal;
     color:var(--component-text-color);
-    font-size:16px;
+    font-size:22px;
     margin-top:10px;
     margin-bottom:10px;
 }
@@ -701,6 +701,87 @@
     outline: none;
 }
 
+/* Account page */
+.account-container{
+    background-image: url(../img/bg1.png);
+    background-size: cover;
+    background-position: center;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    padding-top:75px;
+}
+
+.account-container h2{
+    font-size:50px;
+    padding:15px;
+    text-transform: uppercase;
+}
+
+.account-information{
+    background-color:var(--component-text-color);
+    padding:15px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.account-information h3{
+    color:var(--component-background);
+    font-style:normal;
+    font-size:35px;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+.account-image{
+    height:200px;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 38px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 38px -20px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 38px -20px rgba(0,0,0,0.75);
+}
+
+.account-information ul{
+    display:flex;
+    padding:0;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+}
+
+.account-information li{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:10px;
+    margin-bottom:10px;
+    max-width:500px;
+}
+
+.account-information a{
+    color:var(--component-text-color);
+    background-color:var(--component-button-color);
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    text-decoration: none;
+    padding:10px;
+    font-size:30px;
+    box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
+    text-transform: uppercase;
+}
+
+
+.account-signout{
+    background-color:var(--component-button-color-negative) !important;
+    box-shadow: 3px 3px 0px 1px var(--component-button-color-negative-opacity) !important;
+}
 
 /* Global Media queries  */
 
@@ -709,13 +790,14 @@
         display:none;
     }
 
-    .navbar-button{
+    .navbar-buttons{
         display:flex;
     }
 
     .box-container{
         flex-direction: column;
     }
+
 
 }
 
@@ -730,5 +812,9 @@
     
     .hero-footer img{
         height:50px;
+    }
+
+    .navbar-item{
+        padding:10px;
     }
 }
