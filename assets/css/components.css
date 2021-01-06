@@ -6,6 +6,10 @@
 
 /* Navbar Styling */
 
+body{
+    background-color:var(--component-background);
+}
+
 .navbar{
     height:75px;
     width:100%;
@@ -34,7 +38,6 @@
 }
 
 .navbar-button-collection li{
-    
     padding:10px 20px;
     margin-left:10px;
     margin-right:10px;
@@ -48,6 +51,20 @@
     font-style:var(--header-font-style);
     font-weight: var(--header-font-weight);
     text-shadow: 1px 1px var(--component-background-opacity);
+    padding:5px;
+}
+
+.navbar-first-item::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--component-text-color);
+    transition: width .3s;
+}
+
+.navbar-first-item:hover::after{
+    width: 100%;
 }
 
 .navbar-button{
@@ -711,6 +728,10 @@
     font-style: var(--header-font-style);
     color:var(--component-text-color);
     padding-top:75px;
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
 }
 
 .account-container h2{
@@ -727,13 +748,22 @@
     justify-content: center;
     align-items:center;
     flex-direction: column;
+    height:100%;
 }
 
 .account-information h3{
     color:var(--component-background);
     font-style:normal;
     font-size:35px;
-    padding:10px;
+    padding:5px;
+    text-transform: uppercase;
+}
+
+.account-information h4{
+    color:var(--component-background);
+    font-style:normal;
+    font-size:25px;
+    padding:5px;
     text-transform: uppercase;
 }
 
@@ -781,6 +811,55 @@
 .account-signout{
     background-color:var(--component-button-color-negative) !important;
     box-shadow: 3px 3px 0px 1px var(--component-button-color-negative-opacity) !important;
+}
+
+/* Settings Page */
+
+.settings-container{
+    background-image: url(../img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    padding-top:75px;
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+}
+
+.settings-information{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding-left:30px;
+    padding-right:30px;
+    width:100%;
+}
+
+.settings-information h3{
+    color:var(--component-text-color);
+    font-style:normal;
+    font-size:35px;
+    padding:5px;
+    text-transform: uppercase;
+}
+
+.settings-information h4{
+    color:var(--component-text-color);
+    font-style:normal;
+    font-size:25px;
+    padding:5px;
+    text-transform: uppercase;
+}
+
+.settings-container h1{
+    font-size:50px;
+    padding:15px;
+    text-transform: uppercase;
 }
 
 /* Global Media queries  */

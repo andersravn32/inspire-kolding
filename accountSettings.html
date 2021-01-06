@@ -49,23 +49,25 @@
     </header>
 
     <main>
-        <section class="account-container">
-            <h2 class="text-shadow">/Avni</h2>
+        <section class="settings-container">
+            <h1 class="text-shadow">/Settings</h1>
 
-            <article class="account-information">
+            <article class="settings-information">
                 <img class="account-image" src="assets/img/user.jpg" alt="User Profile Picture">
                 <h3>Avni Hasani</h3>
                 <h4>Avni7000</h4>
-                <ul>
-                    <li><a class="text-shadow button-shadow" href="#">My boxes<i class="fas fa-chevron-right"></i></a></li>
-                    <li><a class="text-shadow button-shadow" href="#">My articles<i class="fas fa-chevron-right"></i></a></li>
-                    <li><a class="text-shadow button-shadow" href="#">Bio<i class="fas fa-chevron-right"></i></a></li>
-                </ul>
-
-                <ul>
-                    <li><a class="text-shadow button-shadow" href="accountSettings.html">Settings<i class="fas fa-cog"></i></a></li>
-                    <li><a class="text-shadow button-shadow account-signout" href="index.html">Signout<i class="fas fa-sign-out-alt"></i></a></li>
-                </ul>
+                <form class="register-form" action="#" method="post">
+                    <label class="text-shadow">Full Name:</label>
+                    <input type="text" name="name">
+                    <label class="text-shadow">Username:</label>
+                    <input type="text" name="username">
+                    <label class="text-shadow">Email address:</label>
+                    <input type="email" name="email">
+                    <label class="text-shadow">Password:</label>
+                    <input type="password" name="passwork">
+                    <input class="text-shadow button-shadow" type="submit" value="Apply">
+                    <a class="text-shadow login-register-button button-shadow" href="account.html"><i class="fas fa-chevron-left"></i>CANCEL</a>
+                </form>
             </article>
         </section>
     </main>
