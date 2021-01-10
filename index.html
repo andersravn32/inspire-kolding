@@ -111,6 +111,11 @@
         var st = $(this).scrollTop();
         myElement.css({'opacity' : 1 - st/300 });
         enabled = false;
+        if (myElement.css('opacity') == 0){
+            myElement.css('display',"none");
+        }else{
+            myElement.css('display',"flex");
+        }
     });
 </script>
 </body>
