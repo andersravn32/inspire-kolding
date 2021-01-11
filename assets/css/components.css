@@ -65,6 +65,7 @@ body{
     font-weight: var(--header-font-weight);
     text-shadow: 1px 1px var(--component-background-opacity);
     padding:5px;
+    text-transform: uppercase;
 }
 
 .navbar-first-item::after{
@@ -1152,11 +1153,11 @@ body{
 }
 
 .box-specific-state{
-    min-height:300px;
+    min-height:450px;
     background-color:var(--component-background);
     color:var(--component-text-color);
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding:15px;
 
