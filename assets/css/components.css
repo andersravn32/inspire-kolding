@@ -321,6 +321,7 @@ body{
     font-style:var(--header-font-style);
     color:var(--component-text-color);
     font-size:50px;
+    text-transform: uppercase;
 }
 
 .box-controls{
