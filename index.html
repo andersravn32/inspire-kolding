@@ -14,6 +14,7 @@
 
     <!-- Locally stored assets -->
     <script src="assets/js/navbar.js"></script>
+    <script type="text/javascript" src="assets/js/boxselector.js"></script>
 </head>
 <body>
     <header>
@@ -52,7 +53,7 @@
         <img class="hero-logo" src="assets/img/kk_logo_pos3.png" alt="Kolding Kommune lg">
         <footer id="hero-footer" class="hero-footer">
             <img src="assets/img/kk_logo_pos.png" alt="Kolding kommune">
-            <a href="#" class="hero-button button-shadow text-shadow">Rent a Box</a>
+            <a href="#boxes" class="hero-button button-shadow text-shadow">Rent a Box</a>
         </footer>
 
     </section>
@@ -68,24 +69,19 @@
 
     </section>
     <section id="boxes" class="box-selector-container">
-        <h2 class="box-selector-header text-shadow">Our Boxes</h2>
-        <div class="box-container">
-            <article class="box">
-                <div class="box-dropdown button-shadow">
-                    <h2 class="text-shadow">Box #1 - Free</h2>
-                    <i class="text-shadow fas fa-chevron-down"></i>
-                </div>
-        
-                <div class="box-display">
-                    <a href="javascript:void(0)"><i class="text-shadow fas fa-chevron-left"></i></a>
-                    <img class="scale-effect" src="assets/img/box_available.png" alt="Box box_available">
-                    <a href="javascript:void(0)"><i class="text-shadow fas fa-chevron-right"></i></a>
-                </div>
-        
-                <a class="box-rent-button text-shadow button-shadow" href="javascript:void(0)">Rent this box</a>
-        
-            </article>
-        </div>
+        <h2 class="text-shadow">Our Boxes</h2>
+        <article class="box-panel">
+            <div class="box-controls">
+                <a class="text-shadow button-shadow" href="boxes.html">Box #1 - Free</a>
+                <a class="text-shadow button-shadow" href="box.html">Rent this box</a>
+            </div>
+
+            <div class="box-preview">
+                <i class="fas fa-chevron-left"></i>
+                <img class="box-image scale-effect" id="box-image" src="assets/img/box_available.png" alt="Box Image">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </article>
     </section>
 </main>
 <footer class="footer">

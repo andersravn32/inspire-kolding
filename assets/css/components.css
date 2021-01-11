@@ -206,13 +206,13 @@ body{
     background-color:var(--component-background-opacity);
     height:100px;
     width:100%;
-    display:flex;
     padding:15px;
     justify-content: space-between;
     align-items:center;
     border-top:1px solid var(--component-background);
     transition: all var(--global-transition-timing) ease-in-out;
     display:none;
+    visibility: hidden;
 }
 
 .hero-footer img{
@@ -283,89 +283,68 @@ body{
     font-weight: var(--header-font-weight);
     font-style:var(--header-font-style);
     color:var(--component-text-color);
-    text-align: center;
     padding:15px;
     padding-top:75px;
-    padding-bottom:50px;
+    padding-bottom:75px;
 }
 
-.box-selector-header{
-    margin-top:10px;
-    margin-bottom:10px;
-}
-
-.box-container{
-    width:100%;
+.box-panel{
+    height:100%;
     display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box{
-    height:100vh;
-    width:100%;
-    max-width:400px;
-    max-height:400px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin:5px;
+    justify-content: space-evenly;
+    align-items:center;
+    text-align: center;
 }
 
 .box-selector-container h2{
-    font-size:54px;
     font-family: var(--header-font);
     font-weight: var(--header-font-weight);
-    font-style: var(--header-font-style);
+    font-style:var(--header-font-style);
     color:var(--component-text-color);
-    text-transform: uppercase;
+    font-size:50px;
 }
 
-.box-dropdown{
-    padding:15px;
-    width:100%;
-    background-color:var(--component-button-color);
+.box-controls{
     display:flex;
-    justify-content: space-between;
-    align-items:center;
-    box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
+    flex-direction: column;
+    width:100%;
+    max-width:500px;
+    text-align: center;
 }
 
-.box-dropdown h2,i{
-    font-size:30px;
-}
-
-.box-display a{
-    color:var(--component-text-color);
-}
-
-.box-display{
-    height:200px;
+.box-preview{
     display:flex;
     justify-content: space-between;
     align-items: center;
     width:100%;
+    max-width:500px;
+    text-align: center;
+    font-size:40px;
 }
 
-.box-display img{
-    height:140px;
+.box-preview i{
+    padding:15px;
 }
 
-.box-rent-button{
-    background-color:var(--component-button-color);
+.box-image{
+    width:100%;
+    max-width:350px;
+}
+
+.box-controls a{
     font-size:35px;
-    padding:15px 35px;
     font-family: var(--header-font);
     font-weight: var(--header-font-weight);
-    font-style: var(--header-font-style);
+    font-style:var(--header-font-style);
     color:var(--component-text-color);
-    text-transform: uppercase;
     text-decoration: none;
+    text-transform: uppercase;
+    margin-top:15px;
+    margin-bottom:15px;
+    background-color:var(--component-button-color);
     box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
-    width:100%;
+    padding:15px;
 }
-
 
 /* Footer */
 
@@ -1075,6 +1054,129 @@ body{
     width:100%;
 }
 
+/* Box.html Page */
+
+.box-specific-container{
+    min-height:100vh;
+    background-image: url(../img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    font-style: var(--header-font-style);
+    color:var(--component-text-color);
+    padding-top:75px;
+}
+
+.box-specific-container h2{
+    font-size:50px;
+    text-transform: uppercase;
+    font-weight: var(--header-font-weight);
+    padding:15px;
+}
+
+.box-specific-image{
+    width:100%;
+    max-width:400px;
+    height:500px;
+    background-image: url(../img/box1.jpg);
+    background-size: cover;
+    background-position: top center;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    padding:15px;
+}
+
+.box-specific-image a{
+    width:100%;
+    padding:15px;
+    background-color:var(--component-button-color);
+    font-size: 30px;
+    color:var(--component-text-color);
+    text-decoration: none;
+    box-shadow: 3px 3px 0px 1px var(--component-button-shadow);
+    text-transform: uppercase;
+}
+
+.box-specific-details{
+    min-height:400px;
+    background-color:var(--component-text-color);
+    color:var(--component-background);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:15px;
+}
+
+.box-specific-details ul{
+    list-style-type: none;
+    padding:15px;
+}
+
+.box-specific-container li{
+    font-family: var(--font);
+    font-size:25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.box-specific-details h3{
+    font-size:50px;
+    text-transform: uppercase;
+    font-weight: var(--header-font-weight);
+    font-style:var(--header-font-style);
+    font-family: var(--header-font);
+}
+
+.box-specific-state{
+    min-height:300px;
+    background-color:var(--component-background);
+    color:var(--component-text-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+
+    width:100%;
+}
+
+.box-specific-state h3{
+    font-size:70px;
+    text-transform: uppercase;
+    font-weight: var(--header-font-weight);
+    font-style:var(--header-font-style);
+    font-family: var(--header-font);
+}
+
+.box-specific-state img{
+    height:250px;
+    padding:15px;
+}
+
+.box-specific-state ul{
+    list-style-type:none;
+    padding:15px;
+}
+
+.box-specific-state li{
+    display:flex;
+    align-items:center;
+}
+
+.tag-free{
+    height:25px;
+    width:25px;
+    border-radius: 50%;
+    background-color:var(--component-button-color);
+    margin:5px;
+}
+
+/* Boxes.html Page */
+
+
 /* Global Media queries  */
 
 @media only screen and (max-width: 768px) {
@@ -1105,6 +1207,7 @@ body{
     }
     .hero-footer{
         display:flex;
+        visibility: visible;
     }
 
     
@@ -1170,6 +1273,43 @@ body{
         height:500px;
     }
 
+    .box-panel{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+
+    .box-controls{
+        margin-bottom:50px;
+    }
+
+    .box-image{
+        max-width:200px;
+    }
+
+    .box-specific-details{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .box-specific-state{
+        
+        flex-direction: column-reverse;
+    }
+
+    .box-specific-state ul{
+        text-align: center;
+    }
+    .box-specific-state h3{
+        font-size:50px;
+    }
+
+    .box-specific-state img{
+        height:150px;
+    }
 }
 
 @media only screen and (max-width: 374px) {
