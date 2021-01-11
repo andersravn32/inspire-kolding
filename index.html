@@ -64,20 +64,19 @@
             <h2 class="text-shadow scale-effect">Grow free</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, aspernatur. Dolorem adipisci minus ipsum. Molestias, ipsa doloremque ipsam delectus aliquid ex cum quibusdam mollitia esse vitae hic id optio unde.</p>
         </div>
-
     </section>
     <section id="boxes" class="box-selector-container">
         <h2 class="text-shadow">/Our Boxes</h2>
         <article class="box-panel">
             <div class="box-controls">
-                <a class="text-shadow button-shadow" href="boxes.html">Box #1 - Free</a>
-                <a class="text-shadow button-shadow" href="box.html">Rent this box</a>
+                <a id="box-id" class="text-shadow button-shadow" href="boxes.html">Box #1 - Free</a>
+                <a id="box-btn" class="text-shadow button-shadow" href="box.html">Rent this box</a>
             </div>
 
             <div class="box-preview">
-                <i class="fas fa-chevron-left"></i>
-                <img class="box-image scale-effect" id="box-image" src="assets/img/box_available.png" alt="Box Image">
-                <i class="fas fa-chevron-right"></i>
+                <i onclick="removeBox()" class="fas fa-chevron-left"></i>
+                <img id="box-img" class="box-image scale-effect" id="box-image" src="assets/img/box_available.png" alt="Box Image">
+                <i onclick="addBox()" class="fas fa-chevron-right"></i>
             </div>
         </article>
     </section>
