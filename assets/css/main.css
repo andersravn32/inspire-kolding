@@ -5,7 +5,6 @@ main.css is the top level stylesheet, extra modules should be imported through t
 
 /* Import modules here */
 @import url("components.css");
-@import url("structure.css");
 @import url("animations.css");
 
 

@@ -22,6 +22,19 @@ body{
     transition: all var(--global-transition-timing) ease-in-out;
 }
 
+.navbar{
+    position:fixed;
+    top:0px;
+    z-index:3;
+}
+
+.navbar-menu{
+    position:fixed;
+    top:75px;
+    right:0px;
+    z-index:5;
+}
+
 .navbar img{
     height:50px;
 }
@@ -213,6 +226,12 @@ body{
     transition: all var(--global-transition-timing) ease-in-out;
     display:none;
     visibility: hidden;
+}
+
+.hero-footer{
+    position:fixed;
+    bottom:0;
+    z-index:2;
 }
 
 .hero-footer img{
