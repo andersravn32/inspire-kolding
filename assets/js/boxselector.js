@@ -29,15 +29,16 @@ function updateBox(){
 
     if (Math.floor(Math.random() * 2) == 1){
         innerHTML = "Box #" + boxIndex + " - Occupied";
-        button.style.display = "none";
+        button.classList.add("box-btn-neg");
+        button.innerHTML = "View this box";
         state.classList.add("box-btn-neg");
         img.src = "assets/img/box_taken.png";
         img.classList.remove("scale-effect");
         img.style.cursor = "no-drop";
     }else{
         innerHTML = "Box #" + boxIndex + " - Free";
-        button.style.display = "block"
         button.classList.remove("box-btn-neg");
+        button.innterHTML = "Rent this box";
         state.classList.remove("box-btn-neg");
         img.src = "assets/img/box_available.png";
         img.classList.add("scale-effect");
