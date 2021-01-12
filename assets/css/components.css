@@ -286,11 +286,20 @@ body{
 }
 
 .hero-video-text p{
-    font-size:22px;
+    font-size:20px;
     font-family: var(--font);
     font-style:normal;
     font-weight: 500;
     margin-top:15px;
+}
+
+.hero-video-text a{
+    color:var(--component-background);
+    font-weight: bold;
+}
+
+.hero-video-text i{
+    font-size:25px;
 }
 
 /* Boxes Section */
@@ -837,6 +846,9 @@ body{
     -webkit-box-shadow: 10px 10px 38px -20px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 38px -20px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 38px -20px rgba(0,0,0,0.75);
+    cursor: pointer;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 .account-information ul{
@@ -1310,6 +1322,17 @@ body{
 }
 
 /* Global Media queries  */
+
+@media only screen and (max-width: 1600px){
+    .hero h2{
+        font-size:175px;
+    }
+
+    .hero-logo{
+        height:125px;
+    }
+
+}
 
 @media only screen and (max-width: 1200px){
     .hero h2{
