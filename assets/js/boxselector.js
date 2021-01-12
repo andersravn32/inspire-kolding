@@ -38,11 +38,28 @@ function updateBox(){
     }else{
         innerHTML = "Box #" + boxIndex + " - Free";
         button.classList.remove("box-btn-neg");
-        button.innterHTML = "Rent this box";
+        button.interHTML = "Rent this box";
         state.classList.remove("box-btn-neg");
         img.src = "assets/img/box_available.png";
         img.classList.add("scale-effect");
         img.style.cursor = "default";
     }
     state.innerHTML = innerHTML;
+}
+
+var boxGroup = 1;
+
+function loadBoxes(){
+
+    if(boxGroup != 3){
+        boxGroup++;
+    }else{
+        document.getElementById("box-button-load").style.display = "none";
+    }
+    var classname = "box-group"+boxGroup;
+    var divsToHide = document.getElementsByClassName(classname); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].classList.remove("box-hidden");
+        divsToHide[i].classList.add("fadein");
+    }
 }

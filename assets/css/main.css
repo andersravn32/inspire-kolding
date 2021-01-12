@@ -36,5 +36,6 @@ main.css is the top level stylesheet, extra modules should be imported through t
 
     --global-transition-timing: .25s;
     --global-scale-timing: .5s;
+    --global-animation-timing: 1.25s;
     --global-scale: scale(1.05);
 }

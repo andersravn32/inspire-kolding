@@ -17,3 +17,35 @@
 .text-shadow{
     text-shadow: 2px 2px var(--text-shadow-color);
 }
+
+.fadein {
+    animation: fadeIn ease var(--global-animation-timing);
+    -webkit-animation: fadeIn ease var(--global-animation-timing);
+    -moz-animation: fadeIn ease var(--global-animation-timing);
+    -o-animation: fadeIn ease var(--global-animation-timing);
+    -ms-animation: fadeIn ease var(--global-animation-timing);
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
