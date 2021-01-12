@@ -52,6 +52,7 @@ body{
 
 .navbar-button-collection li{
     padding:10px 20px;
+    padding-top:12px;
     margin-left:10px;
     margin-right:10px;
 }
@@ -74,7 +75,7 @@ body{
     width: 0;
     height: 2px;
     background: var(--component-text-color);
-    transition: width .3s;
+    transition: width var(--global-transition-timing) ease-in-out;
 }
 
 .navbar-first-item:hover::after{
@@ -1253,7 +1254,7 @@ body{
     padding:50px;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
+    grid-gap: 75px;
 }
 
 .box{
@@ -1262,6 +1263,7 @@ body{
     align-items: center;
     flex-direction: column;
     font-size:20px;
+    text-align: center;
 }
 
 .box h3, h4{
@@ -1270,7 +1272,6 @@ body{
     font-weight: var(--header-font-weight);
     font-style:var(--header-font-style);
     font-family: var(--header-font);
-    padding:15px;
 }
 
 .box a{
@@ -1288,7 +1289,7 @@ body{
 
 .box img{
     width:100%;
-    padding:20px;
+    padding:15px;
 }
 
 .box-free h4{
@@ -1310,6 +1311,10 @@ body{
     cursor:no-drop;
 }
 
+.box-taken img:hover{
+    opacity: 50%;
+}
+
 .boxes-load{
     background-color:var(--component-button-color);
     padding:5px 15px;
@@ -1321,6 +1326,7 @@ body{
     grid-column-start: 2;
     grid-column-end: 4;
     margin-top:25px;
+    text-transform: uppercase;
 }
 
 .box-hidden{
@@ -1351,12 +1357,12 @@ body{
 
     .boxes-preview{
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 25px;
+        grid-gap: 50px;
     }
 
     .boxes-load{
-        grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
         margin-top:25px;
     }
 }
@@ -1366,7 +1372,7 @@ body{
     .boxes-preview{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
-        padding:10px;
+        padding:25px;
     }
 
     .boxes-load{
