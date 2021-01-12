@@ -48,18 +48,22 @@ function updateBox(){
 }
 
 var boxGroup = 1;
+var boxUnloaded = 16;
 
 function loadBoxes(){
 
-    if(boxGroup != 3){
+    if(boxGroup != 5){
         boxGroup++;
-    }else{
-        document.getElementById("box-button-load").style.display = "none";
     }
     var classname = "box-group"+boxGroup;
     var divsToHide = document.getElementsByClassName(classname); //divsToHide is an array
     for(var i = 0; i < divsToHide.length; i++){
         divsToHide[i].classList.remove("box-hidden");
         divsToHide[i].classList.add("fadein");
+        boxUnloaded--;
+    }
+
+    if(boxUnloaded == 0){
+        document.getElementById("box-button-load").style.display = "none";
     }
 }

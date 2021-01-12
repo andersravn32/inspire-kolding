@@ -1233,6 +1233,7 @@ body{
     background-image: url(../img/bg2.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     font-family: var(--header-font);
     font-weight: var(--header-font-weight);
     font-style: var(--header-font-style);
